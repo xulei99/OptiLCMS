@@ -1183,7 +1183,8 @@ List annotation_export(List searching_res,
                                  _["Database"] = allResNMs[3],
                                  _["MS2Pekas"] = allResNMs[4], // Include MS2Peaks here
                                  _["Scores"] = allScore_sub,
-                                 _["Dot_Similarity"] = allDots_sub);
+                                 _["Dot_Similarity"] = allDots_sub,
+								                 _["Dot_Product_Score"] = allDots_sub); // Add Dot Product Score
         }
         this_res[s] = res_tmp;
       } else if(type == 1){
@@ -1204,7 +1205,8 @@ List annotation_export(List searching_res,
           res_tmp = List::create(_["IDs"] = allIDs_sub,
                                  _["Compounds"] = allCMPDNMs,
                                  _["Scores"] = allScore_sub, 
-                                 _["Dot_Similarity"] = allDots_sub);
+                                 _["Dot_Similarity"] = allDots_sub,
+								                 _["Dot_Product_Score"] = allDots_sub); // Add Dot Product Score
         }
         this_res[s] = res_tmp;
         
@@ -1225,7 +1227,8 @@ List annotation_export(List searching_res,
           res_tmp = List::create(_["IDs"] = allIDs_sub,
                                  _["Formula"] = allFormulas,
                                  _["Scores"] = allScore_sub, 
-                                 _["Dot_Similarity"] = allDots_sub);
+                                 _["Dot_Similarity"] = allDots_sub,
+								                 _["Dot_Product_Score"] = allDots_sub); // Add Dot Product Score
         }
         this_res[s] = res_tmp;
         
@@ -1246,7 +1249,8 @@ List annotation_export(List searching_res,
           res_tmp = List::create(_["IDs"] = allIDs_sub,
                                  _["InchiKeys"] = allInCKys,
                                  _["Scores"] = allScore_sub, 
-                                 _["Dot_Similarity"] = allDots_sub);
+                                 _["Dot_Similarity"] = allDots_sub,
+								                 _["Dot_Product_Score"] = allDots_sub); // Add Dot Product Score
         }
         this_res[s] = res_tmp;
       }
